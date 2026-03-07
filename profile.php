@@ -22,6 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     move_uploaded_file($tempName,$folder);
 
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -68,6 +69,22 @@ body{
     padding:10px;
     border-radius:5px;
 }
+
+button{
+    margin-top:20px;
+    width:100%;
+    padding:10px;
+    background:#667eea;
+    color:white;
+    border:none;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#5a67d8;
+}
 </style>
 </head>
 
@@ -93,6 +110,10 @@ body{
 <b>Biography</b><br>
 <?php echo $bio; ?>
 </div>
+
+<a href="index.php">
+<button type="button">Create Another Profile</button>
+</a>
 
 </div>
 
