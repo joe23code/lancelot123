@@ -88,7 +88,7 @@ button:hover{
 
 <label>Gender</label>
 <div class="options">
-<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Male" required> Male
 <input type="radio" name="gender" value="Female"> Female
 </div>
 
